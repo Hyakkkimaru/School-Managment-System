@@ -1,9 +1,21 @@
 import React from "react";
-import { Navbar, Logo, NavigationLinks, NavLink, ButtonsContainer, LoginButton, GuestButton, HomeContainer, SchoolInfo, SchoolImage, Title, LoremTextContainer, AdminRegisterLink } 
-from '../styles/styles';
+import { 
+  Navbar, 
+  Logo, 
+  NavigationLinks, 
+  NavLink, 
+  HomeContainer, 
+  MainContent, 
+  HeroImage, 
+  Title, 
+  Subtitle,
+  ButtonContainer,
+  PrimaryButton,
+  SecondaryButton 
+} from '../styles/styles';
 import bg from "../assets/bg.png";
 import bg1 from "../assets/bg1.png";
-import { Link, useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -21,17 +33,17 @@ const Home = () => {
                     <NavLink href="#">Products</NavLink>
                     <NavLink href="#">Contact Us</NavLink>
                 </NavigationLinks>
-                <ButtonsContainer>
-                    <LoginButton onClick={handleLoginClick}>Sign In</LoginButton>
-                    <GuestButton onClick={handleLoginClick}>Guest Mode</GuestButton>
-                </ButtonsContainer>
             </Navbar>
             <HomeContainer>
-                <SchoolInfo>
-                    <Title>School Management System</Title>
-                    <AdminRegisterLink to="/admin/register">Admin Register</AdminRegisterLink>
-                </SchoolInfo>
-                <SchoolImage src={bg} alt="pupils" />
+                <MainContent>
+                    <Title>Track your academic progress</Title>
+                    <Subtitle>Stay organized and monitor your learning journey with our school diary system</Subtitle>
+                    <HeroImage src={bg} alt="Creative community" />
+                    <ButtonContainer>
+                        <PrimaryButton onClick={handleLoginClick}>Sign In</PrimaryButton>
+                        <SecondaryButton onClick={handleLoginClick}>Guest Mode</SecondaryButton>
+                    </ButtonContainer>
+                </MainContent>
             </HomeContainer>
         </>
     );
