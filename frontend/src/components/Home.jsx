@@ -1,17 +1,17 @@
 import React from "react";
 import { 
-  Navbar, 
-  Logo, 
-  NavigationLinks, 
-  NavLink, 
-  HomeContainer, 
-  MainContent, 
-  HeroImage, 
-  Title, 
-  Subtitle,
-  ButtonContainer,
-  PrimaryButton,
-  SecondaryButton 
+    Navbar, 
+    Logo, 
+    NavigationLinks, 
+    NavLink, 
+    HomeContainer, 
+    MainContent, 
+    HeroImage, 
+    Title, 
+    Subtitle,
+    ButtonContainer,
+    PrimaryButton,
+    SecondaryButton 
 } from '../styles/styles';
 import bg from "../assets/bg.png";
 import bg1 from "../assets/bg1.png";
